@@ -17,7 +17,9 @@ const config: Config = {
         '!src/**/*.repository.ts',
         '!src/**/*.config.ts',
         '!src/**/*.api-docs.ts',
-        '!src/domain/**/*.ts'
+        '!src/domain/**/*.ts',
+        '!src/**/*seed*.ts',
+        '!src/**/*.seed.ts'
     ],
     coverageDirectory: './coverage',
     testEnvironment: 'node',
@@ -27,7 +29,8 @@ const config: Config = {
     testPathIgnorePatterns: [
         '/node_modules/',
         '/dist/',
-        '/coverage/'
+        '/coverage/',
+        'seed'
     ]
 };
 
