@@ -16,4 +16,4 @@ docker compose up
 
 6. Run the seed `npm run seed`
 7. Up on develompente mode: `npm run start:dev`
-8. Review service documentation [here](localhost:3000/api)
+8. Review service documentation [here](http://localhost:3000/api)
