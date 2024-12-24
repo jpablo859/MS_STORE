@@ -3,6 +3,7 @@ import { runSeeders, SeederOptions } from 'typeorm-extension';
 import { config } from 'dotenv';
 import { MainSeeder } from './main.seeder';
 import { ProductEntity } from '../entities/product.entity';
+import { CustomerEntity } from '../entities/customer.entity';
 
 config();
 
@@ -13,7 +14,7 @@ const options: DataSourceOptions & SeederOptions = {
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
-    entities: [ProductEntity],
+    entities: [ProductEntity, CustomerEntity],
     seeds: [MainSeeder]
 };
 
