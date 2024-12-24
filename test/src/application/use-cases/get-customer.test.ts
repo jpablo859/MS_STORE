@@ -26,6 +26,6 @@ describe('GetCustomer', () => {
         const result = await getCustomer.excecute(1);
 
         expect(result).toEqual(expectedCustomer);
-        expect(customerPort.getCustomer).toHaveBeenCalledWith(1);
+        expect(customerPort.getCustomer).toHaveBeenCalledWith({ id: 1 });
     });
 }); 
