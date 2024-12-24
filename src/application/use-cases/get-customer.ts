@@ -10,6 +10,8 @@ export class GetCustomer implements GetCustomerUseCase {
     ) { }
 
     async excecute(customerId: number): Promise<Customer> {
-        return this.customerPort.getCustomer(customerId);
+        return this.customerPort.getCustomer({
+            id: customerId
+        });
     }
 }
