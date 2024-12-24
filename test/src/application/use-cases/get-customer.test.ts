@@ -7,7 +7,8 @@ describe('GetCustomer', () => {
 
     beforeEach(() => {
         customerPort = {
-            getCustomer: jest.fn()
+            getCustomer: jest.fn(),
+            saveCustomer: jest.fn()
         };
         getCustomer = new GetCustomer(customerPort);
     });
